@@ -36,7 +36,7 @@ module.exports = class BaseModel {
   }
 
   getById(id) {
-    const item = this.items.find(item => item.id === id);
+    const item = this.items.find(i => i.id === id);
     if (!item) throw new NotFoundError(`Cannot get ${this.name} id=${id} : not found`);
     return item;
   }
