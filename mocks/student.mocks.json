@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "ted",
+    "lastName": "hello",
+    "email": "doh@gmail.com",
+    "profilePicture": "aa",
+    "notes": "good student",
+    "id": 1551728976080
+  },
+  {
+    "firstName": "John",
+    "lastName": "hello",
+    "email": "dohy@gmail.com",
+    "profilePicture": "ab",
+    "notes": "good student",
+    "id": 1551728976081
+  }
+]
