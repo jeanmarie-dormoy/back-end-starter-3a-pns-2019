@@ -31,21 +31,23 @@ const getTicketById = function (id) {
   return ticket;
 };
 
-router.get('/', (req, res) => res.status(200).json(Ticket.get()));
-// router.get('/', (req, res) => res.status(200).json(getTickets()));
+// router.get('/', (req, res) => res.status(200).json(Ticket.get()));
+router.get('/', (req, res) => res.status(200).json(getTickets()));
 router.get('/statusJmd', (req, res) => res.status(200).json('ok JMD.'));
 router.get('/attachJmd', (req, res) => res.status(200).json(getTickets()));
 
 router.get('/:ticketId', (req, res) => {
-  res.status(200).json(getTicketById(req.params.ticketId));
+  res.status(200).json(attachStudent(getTicketById(req.params.ticketId)));
 });
-router.delete('/:ticketId', (req, res) => res.status(200).json(Ticket.delete(req.params.ticketId)));
+router.delete('/:ticketId', (req, res) => {
+  res.status(200).json(Ticket.delete(req.params.ticketId));
+});
 router.put('/:ticketId', (req, res) => res.status(200).json(attachStudent(Ticket.update(req.params.ticketId, req.body))));
 router.post('/', (req, res) => {
   try {
     const ticket = Ticket.create(req.body);
-    attachStudent(ticket);
-    res.status(201).json(ticket);
+    // attachStudent(ticket);
+    res.status(201).json(attachStudent(ticket));
   } catch (err) {
     if (err.name === 'ValidationError') {
       res.status(400).json(err.extra);
@@ -54,11 +56,5 @@ router.post('/', (req, res) => {
     }
   }
 });
-
-module.exports = {
-  attachStudent,
-  getTickets,
-  getTicketById,
-};
 
 module.exports = router;
