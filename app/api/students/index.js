@@ -2,6 +2,11 @@ const { Router } = require('express');
 const { Student } = require('../../models');
 
 const router = new Router();
+const getStudentByName = function (name) {
+  return Student.get().filter(
+    student => student.firstName.includes(name) || student.lastName.includes(name),
+  );
+};
 router.get('/', (req, res) => res.status(200).json(Student.get()));
 router.get('/:studentId', (req, res) => {
   res.status(200).json(Student.getById(req.params.studentId));
@@ -20,5 +25,7 @@ router.post('/', (req, res) => {
     }
   }
 });
+
+router.get('/searchByName/:studentName', (req, res) => res.status(200).json(getStudentByName(req.params.studentName)));
 
 module.exports = router;

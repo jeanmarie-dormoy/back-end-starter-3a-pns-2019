@@ -3,7 +3,7 @@
     "title": " ticket one",
     "description": "descp 1",
     "date": "1551772717030",
-    "studentID": "1551728976080",
+    "studentID": 1551728976080,
     "major": "SI",
     "archived": false,
     "id": 1551772870029,
@@ -12,7 +12,7 @@
       "lastName": "hello",
       "email": "doh@gmail.com",
       "profilePicture": "aa",
-      "notes": "good student",
+      "notes": "very very good student.",
       "id": 1551728976080
     }
   },
@@ -20,16 +20,16 @@
     "title": " ticket two modified :) .",
     "description": "descp 2",
     "date": "1551772717034",
-    "studentID": "1551728976081",
+    "studentID": 1551728976081,
     "major": "GB",
     "archived": false,
     "id": 1551772870030,
     "student": {
       "firstName": "John",
-      "lastName": "hello",
+      "lastName": "hellou",
       "email": "dohy@gmail.com",
       "profilePicture": "ab",
-      "notes": "good student",
+      "notes": "oooh good student",
       "id": 1551728976081
     }
   },
@@ -39,14 +39,14 @@
     "description": "Oh Boy",
     "id": 1552157181289,
     "major": "GB",
-    "studentID": "1551728976080",
+    "studentID": 1551728976080,
     "title": "Ticket Test",
     "student": {
       "firstName": "ted",
       "lastName": "hello",
       "email": "doh@gmail.com",
       "profilePicture": "aa",
-      "notes": "good student",
+      "notes": "very very good student.",
       "id": 1551728976080
     }
   }
