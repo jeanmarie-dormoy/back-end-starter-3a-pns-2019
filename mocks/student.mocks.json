@@ -14,5 +14,13 @@
     "profilePicture": "ab",
     "notes": "oooh good student",
     "id": 1551728976081
+  },
+  {
+    "id": 1552336333714,
+    "firstName": "Alexandre",
+    "lastName": "Dupont",
+    "email": "dup@gmail.com",
+    "notes": "bon étudiant",
+    "profilePicture": "a"
   }
 ]
