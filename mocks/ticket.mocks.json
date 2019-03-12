@@ -3,7 +3,7 @@
     "title": "oh boy",
     "description": "hello",
     "major": "SI",
-    "studentID": "1551728976080",
+    "studentID": 1551728976080,
     "date": "2019-03-11T20:52:53.096Z",
     "archived": false,
     "id": 1552337573163,
@@ -20,9 +20,43 @@
     "title": "hey ghetto",
     "description": "big D",
     "major": "GE",
-    "studentID": "1552336333714",
+    "studentID": 1552354875685,
     "date": "2019-03-11T20:53:23.378Z",
     "archived": false,
-    "id": 1552337603407
+    "id": 1552337603407,
+    "student": {
+      "id": 1552354875685,
+      "firstName": "jean",
+      "lastName": "michel",
+      "email": "jeanmichel@michel.com",
+      "notes": "Just a Jean Mi",
+      "profilePicture": "blob"
+    }
+  },
+  {
+    "title": "ticket number two",
+    "description": "ohlala",
+    "major": "GB",
+    "studentID": "1551728976080",
+    "date": "2019-03-12T02:06:11.668Z",
+    "archived": false,
+    "id": 1552356371904,
+    "student": {
+      "firstName": "ted",
+      "lastName": "hello",
+      "email": "doh@gmail.com",
+      "profilePicture": "aa",
+      "notes": "very very good student.",
+      "id": 1551728976080
+    }
+  },
+  {
+    "title": "fzs",
+    "description": "fze",
+    "major": "SI",
+    "studentID": "1551728976081",
+    "date": "2019-03-12T02:06:28.351Z",
+    "archived": false,
+    "id": 1552356388367
   }
 ]
